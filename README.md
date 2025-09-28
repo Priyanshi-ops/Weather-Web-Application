@@ -6,3 +6,4 @@ This is a Weather Web Application developed using HTML, CSS, and Javascript. I u
 ## Topics Covered
 
 (Tailwind CSS, Geolocation, Open Weathermap API)
+project link -  https://priyanshi-ops.github.io/Weather-Web-Application/
