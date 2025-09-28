@@ -1,0 +1,17 @@
+{
+  "name": "weather-app",
+  "version": "2.0.0",
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./src/style.css",
+    "start": "npx tailwindcss -i ./src/input.css -o ./src/style.css --watch"
+  },
+  "devDependencies": {
+    "prettier": "^3.0.0-alpha.6",
+    "tailwindcss": "^4.0.12"
+  },
+  "dependencies": {
+    "@splidejs/splide": "^4.1.4",
+    "@tailwindcss/cli": "^4.0.12",
+    "preline": "^2.0.3"
+  }
+}

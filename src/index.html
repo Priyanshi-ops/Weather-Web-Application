@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Weather App</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="icon" href="icon.png" type="image/x-icon" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
+  <style>
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: linear-gradient(180deg, #192a56 0%, #4b6584 100%);
+    }
+  </style>
+</head>
+
+<body class="min-h-screen justify-center
+flex flex-col items-center px-4 py-8 text-white select-none">
+
+
+
+  <main class="w-full max-w-md bg-white/10 backdrop-blur-md rounded-3xl shadow-lg p-6
+         flex flex-col items-center">
+    <header class="w-full max-w-md text-center mb-8">
+      <h1 class="text-3xl font-extrabold tracking-wide mb-2">Weather Forecast</h1>
+      <p id="weatherLocation" class="text-lg text-white/80">Loading location...</p>
+      <p id="weatherDate" class="text-sm mt-1 text-white/60">--</p>
+    </header>
+    <div class="flex items-center justify-center gap-6 w-full mt-[-32px]
+           flex-col sm:gap-4 sm:items-center">
+
+      <!-- Weather Lottie Animation -->
+      <div id="weatherIllustration" class="w-28 h-28" aria-hidden="true"></div>
+      <p id="weatherLocationWT" class="text-sm mt-[-20px] text-white/70 max-w-xs mx-auto">
+        Loading weather description...
+      </p>
+
+      <!-- Grouped Weather Info -->
+      <div class="flex flex-col justify-center items-center space-y-4 mb-8 sm:items-center text-center">
+        <div class="flex flex-row gap-2 items-center">
+          <p id="weatherLocationTemp" class="text-6xl font-extrabold drop-shadow-lg leading-none">
+            --°
+          </p>
+          <p id="weatherLocationW" class="text-2xl font-semibold tracking-wide drop-shadow-sm mt-6">
+            --
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <section class="grid grid-cols-3 gap-6 w-full mt-4 text-white/90">
+
+      <div class="flex flex-col items-center">
+        <span class="uppercase text-xs font-semibold">Humidity</span>
+        <span id="weatherHumidity" class="mt-1 text-lg font-semibold select-text">--%</span>
+      </div>
+
+      <div class="flex flex-col items-center">
+        <span class="uppercase text-xs font-semibold">Wind</span>
+        <span id="weatherWind" class="mt-1 text-lg font-semibold select-text">-- km/h</span>
+      </div>
+
+      <div class="flex flex-col items-center">
+        <span class="uppercase text-xs font-semibold">UV Index</span>
+        <span id="weatherUV" class="mt-1 text-lg font-semibold select-text">--</span>
+      </div>
+
+      <div class="flex flex-col items-center">
+        <span class="uppercase text-xs font-semibold">Pressure</span>
+        <span id="weatherPressure" class="mt-1 text-lg font-semibold select-text">-- hPa</span>
+      </div>
+
+      <div class="flex flex-col items-center">
+        <span class="uppercase text-xs font-semibold">Visibility</span>
+        <span id="weatherVisibility" class="mt-1 text-lg font-semibold select-text">-- km</span>
+      </div>
+
+      <div class="flex flex-col items-center">
+        <span class="uppercase text-xs font-semibold">Feel Like</span>
+        <span id="weatherFeelsLike" class="mt-1 text-lg font-semibold select-text">--°</span>
+      </div>
+    </section>
+  </main>
+
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
